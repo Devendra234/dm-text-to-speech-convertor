@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Speech Converter</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="app-container">
+
+            <div class="headings-container">
+                <h1>Text to Speech Converter</h1>
+                <h3>Convert text into natural voice</h3>
+            </div>
+
+            <div class="interaction-container">
+
+                <!-- TEXT INPUT -->
+                <textarea id="textToConvert" class="text-control" cols="35" rows="6"
+                    placeholder="Enter text to convert into speech..."></textarea>
+
+                <!-- LANGUAGE SELECT -->
+                <select id="languageSelect" class="select-control">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+
+                </select>
+
+                <!-- VOICE SELECT -->
+                <select id="voiceSelect" class="select-control">
+                    <!-- Voices will be injected by JS -->
+                </select>
+
+                <!-- ERROR -->
+                <p class="error-para"></p>
+
+                <!-- BUTTON -->
+                <button class="btn" id="convertBtn">
+                    Play Converted Sound
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <span>Developed by <strong>Devendra Marathe</strong></span>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="index.js"></script>
+</body>
+
+</html>
